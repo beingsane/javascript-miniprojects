@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Popup</title>
+</head>
+<body>
+    <h2>Annoying Popup</h2>
+    <button id="pop-here">Click here</button>
+    <div id="popup-wrapper">
+        <div id="popup">
+            <p id="close">X</p>
+            <form id="register-form">
+                <br><br>
+                <label for="email">E-Mail</label>
+                <input type="text" name="email" id="email" placeholder="example@email.com">
+                <p>Enter valid E-Mail Address</p>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="****">
+                <p>At-least 8 character long with [a-z A-Z 0-9 @#!&*$_-]</p>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" placeholder="1234567890">
+                <p>10 digit number</p>
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+    <script src="validations.js"></script>
+</body>
+</html>
