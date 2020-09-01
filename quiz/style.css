@@ -1,0 +1,37 @@
+#head h1{
+    display: inline;
+    color: #FFD600;
+}
+
+#questions{
+    background-color: #FFD600;
+    font-weight: 500;
+}
+
+@media(max-width: 767px){
+    .display-3{
+        font-size: 40px;
+    }
+
+    #head{
+        margin: 10px
+    }
+
+    #head svg{
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0 !important;
+    }
+}
+
+@media(max-width: 575px){
+    .display-3{
+        font-size: 30px;
+    }
+    
+    #head svg{
+        width: 30px;
+        height: 30px;
+        margin-bottom: 15px !important;
+    }
+}
