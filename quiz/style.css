@@ -4,8 +4,28 @@
 }
 
 #questions{
-    background-color: #FFD600;
-    font-weight: 500;
+    background-color: #4f4789;
+    font-weight: 400;
+}
+
+input[type = "submit"]{
+    border: 0;
+    background-color: #fcbf49;
+    color: #201335;
+    padding: 3px 20px;
+}
+
+code{
+    color: #FFD600;
+}
+
+.check{
+    display: none;
+}
+
+input[type = "submit"]:hover{
+    background-color: #f77f00;
+    color: #eae2b7;
 }
 
 @media(max-width: 767px){

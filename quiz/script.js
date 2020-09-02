@@ -1,5 +1,9 @@
 const correctAnswers = ['C','A','C','B','A','B','A','C','A','B'];
 const form = document.querySelector('#quiz');
+const result = document.querySelector('#result div span');
+const resultDiv = document.querySelector('#result');
+const correctTick = document.querySelectorAll('.check');
+
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -17,9 +21,27 @@ form.addEventListener('submit', e => {
         form.q10.value,
     ];
 
+    let q = 1;
     userAnswers.forEach((answer, index) => {
         if(answer === correctAnswers[index]){
             score += 10;
         }
     });
+
+    correctTick.forEach(tick => {
+        tick.style.display = 'inline';
+    })
+        
+
+    resultDiv.classList.remove('d-none')
+    document.documentElement.scrollTop = 0;
+    let i = 0;
+    const timer = setInterval(() => {
+        result.textContent = i + "%";
+        if(i === score){
+            clearInterval(timer);
+        }
+        i++;
+    }, 20)
+
 });

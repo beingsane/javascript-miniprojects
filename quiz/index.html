@@ -16,14 +16,19 @@
             style=" fill:#000000; margin: 0 10px 40px"><path fill="#ffd600" d="M6,42V6h36v36H6z"></path><path fill="#000001" d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"></path>
         </svg>
     </div>
-    <div id="questions" class="mt-15 py-5 text-dark">
+    <div id="result" class="d-none bg-light py-4 px-2 text-center">
+        <div class="container lead">
+            <p>You are <span class="display-4 mx-2">0%</span> Pro!</p>
+        </div>
+    </div>
+    <div id="questions" class="mt-15 py-5 text-white">
         <div class="container-md">
             <h2>Here we go.....</h2><br>
             <form id="quiz">
-                <div class="my-3">
-                    <p class="lead font-weight-normal">1. Which of the following does not obey block scope?</p>
+                <div class="my-5">
+                    <p class="lead">1. Which of the following does not obey block scope?</p>
                     <div class="form-check my-3">
-                        <input type="radio" name="q1" value="A" checked>
+                        <input type="radio" name="q1" value="A">
                         <label class="form-check-label">const</label>
                     </div>
                     <div class="form-check my-3">
@@ -33,24 +38,25 @@
                     <div class="form-check my-3">
                         <input type="radio" name="q1" value="C">
                         <label class="form-check-label">var</label>
+                        <svg viewBox="0 0 20 20" fill="currentColor" class="check" style="width: 25px; height: 25px; color: #ffb17a"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                     </div>
                 </div>
-                
-                <div class="my-3">
-                    <p class="lead font-weight-normal">2. Which of the following function declarations are hoisted at the beginning of your JavaScript file?</p>
+                <div class="my-5">
+                    <p class="lead">2. Which of the following function declarations are hoisted at the beginning of your JavaScript file?</p>
                     <div class="form-check my-3">
-                        <input type="radio" name="q2" value="A" checked>
+                        <input type="radio" name="q2" value="A">
                         <label class="form-check-label">Regular functions ( function fun() )</label>
+                        <svg viewBox="0 0 20 20" fill="currentColor" class="check" style="width: 25px; height: 25px; color: #ffb17a"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                     </div>
                     <div class="form-check my-3">
                         <input type="radio" name="q2" value="B">
                         <label class="form-check-label">Function Expressions ( let fun = function() )</label>
                     </div>
                 </div>
-                <div class="my-3">
-                    <p class="lead font-weight-normal">3. Which of the following is not true about the <b>this</b> keyword?</p>
+                <div class="my-5">
+                    <p class="lead">3. Which of the following is not true about the <b>this</b> keyword?</p>
                     <div class="form-check my-3">
-                        <input type="radio" name="q3" value="A" checked>
+                        <input type="radio" name="q3" value="A">
                         <label class="form-check-label">It represents the context in which the current code is executed</label>
                     </div>
                     <div class="form-check my-3">
@@ -60,24 +66,27 @@
                     <div class="form-check my-3">
                         <input type="radio" name="q3" value="C">
                         <label class="form-check-label">It cannot refer to an HTML element.</label>
+                        <svg viewBox="0 0 20 20" fill="currentColor" class="check" style="width: 25px; height: 25px; color: #ffb17a"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                     </div>
                 </div>
-                <div class="my-3">
-                    <p class="lead font-weight-normal">4. What is Asynchronous execution?</p>
+                <div class="my-5">
+                    <p class="lead">4. What is Asynchronous execution?</p>
                     <div class="form-check my-3">
-                        <input type="radio" name="q4" value="A" checked>
+                        <input type="radio" name="q4" value="A">
                         <label class="form-check-label">Execution of next statement cannot start before execution of current statement finishes</label>
                     </div>
                     <div class="form-check my-3">
                         <input type="radio" name="q4" value="B">
                         <label class="form-check-label">Execution of next statement starts before execution of current statement finishes</label>
+                        <svg viewBox="0 0 20 20" fill="currentColor" class="check" style="width: 25px; height: 25px; color: #ffb17a"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                     </div>
                 </div>
-                <div class="my-3">
-                    <p class="lead font-weight-normal">5. What is the type of JSON?</p>
+                <div class="my-5">
+                    <p class="lead">5. What is the type of JSON?</p>
                     <div class="form-check my-3">
-                        <input type="radio" name="q5" value="A" checked>
+                        <input type="radio" name="q5" value="A">
                         <label class="form-check-label">String</label>
+                        <svg viewBox="0 0 20 20" fill="currentColor" class="check" style="width: 25px; height: 25px; color: #ffb17a"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                     </div>
                     <div class="form-check my-3">
                         <input type="radio" name="q5" value="B">
@@ -88,40 +97,42 @@
                         <label class="form-check-label">Symbol</label>
                     </div>
                 </div>
-                <div class="my-3">
-                    <p class="lead font-weight-normal">6. What is the role of event delegation technique?</p>
+                <div class="my-5">
+                    <p class="lead">6. What is the role of event delegation technique?</p>
                     <div class="form-check my-3">
-                        <input type="radio" name="q6" value="A" checked>
+                        <input type="radio" name="q6" value="A">
                         <label class="form-check-label">Stops Event Bubbling</label>
                     </div>
                     <div class="form-check my-3">
                         <input type="radio" name="q6" value="B">
                         <label class="form-check-label">Uses the bubbling technique</label>
+                        <svg viewBox="0 0 20 20" fill="currentColor" class="check" style="width: 25px; height: 25px; color: #ffb17a"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                     </div>
                     <div class="form-check my-3">
                         <input type="radio" name="q6" value="C">
                         <label class="form-check-label">Is completely irrelevant to Bubbling</label>
                     </div>
                 </div>
-                <div class="my-3">
-                    <p class="lead font-weight-normal">7. The <code>submit</code> event is attached to:</p>
+                <div class="my-5">
+                    <p class="lead">7. The <code>submit</code> event is attached to:</p>
                     <div class="form-check my-3">
-                        <input type="radio" name="q7" value="A" checked>
+                        <input type="radio" name="q7" value="A">
                         <label class="form-check-label">The form element</label>
+                        <svg viewBox="0 0 20 20" fill="currentColor" class="check" style="width: 25px; height: 25px; color: #ffb17a"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                     </div>
                     <div class="form-check my-3">
                         <input type="radio" name="q7" value="B">
                         <label class="form-check-label">The submit button</label>
                     </div>
                     <div class="form-check my-3">
-                        <input type="radio" name="q7" value="C" checked>
+                        <input type="radio" name="q7" value="C">
                         <label class="form-check-label">All input fields</label>
                     </div>
                 </div>
-                <div class="my-3">
-                    <p class="lead font-weight-normal">8. The second parameter of <code>addEventListener()</code> is: </p>
+                <div class="my-5">
+                    <p class="lead">8. The second parameter of <code>addEventListener()</code> is: </p>
                     <div class="form-check my-3">
-                        <input type="radio" name="q8" value="A" checked>
+                        <input type="radio" name="q8" value="A">
                         <label class="form-check-label">Iterator</label>
                     </div>
                     <div class="form-check my-3">
@@ -131,28 +142,31 @@
                     <div class="form-check my-3">
                         <input type="radio" name="q8" value="C">
                         <label class="form-check-label">Callback function</label>
+                        <svg viewBox="0 0 20 20" fill="currentColor" class="check" style="width: 25px; height: 25px; color: #ffb17a"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                     </div>
                 </div>
-                <div class="my-3">
-                    <p class="lead font-weight-normal">9. The only way to create an object in JavaScript is the <i>Object Literal</i> Notation</p>
+                <div class="my-5">
+                    <p class="lead">9. The only way to create an object in JavaScript is the <i>Object Literal</i> Notation</p>
                     <div class="form-check my-3">
-                        <input type="radio" name="q9" value="A" checked>
+                        <input type="radio" name="q9" value="A">
                         <label class="form-check-label">false</label>
+                        <svg viewBox="0 0 20 20" fill="currentColor" class="check" style="width: 25px; height: 25px; color: #ffb17a"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                     </div>
                     <div class="form-check my-3">
                         <input type="radio" name="q9" value="B">
                         <label class="form-check-label">true</label>
                     </div>
                 </div>
-                <div class="my-3">
-                    <p class="lead font-weight-normal">10. Which of the following variable declarations will not lead to error?</p>
+                <div class="my-5">
+                    <p class="lead">10. Which of the following variable declarations will not lead to error?</p>
                     <div class="form-check my-3">
-                        <input type="radio" name="q10" value="A" checked>
+                        <input type="radio" name="q10" value="A">
                         <label class="form-check-label">let var = 5</label>
                     </div>
                     <div class="form-check my-3">
-                        <input type="radio" name="q10" value="B" checked>
+                        <input type="radio" name="q10" value="B">
                         <label class="form-check-label">num = 5</label>
+                        <svg viewBox="0 0 20 20" fill="currentColor" class="check" style="width: 25px; height: 25px; color: #ffb17a"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                     </div>
                     <div class="form-check my-3">
                         <input type="radio" name="q10" value="B">
@@ -160,12 +174,11 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <input type="submit" value="Submit" class="bg-dark text-white">
+                    <input type="submit" value="Submit">
                 </div>
             </form>
         </div>
     </div>
-    
     <script src="./script.js"></script>
 </body>
 </html>
