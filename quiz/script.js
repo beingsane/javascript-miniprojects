@@ -3,7 +3,7 @@ const form = document.querySelector('#quiz');
 const result = document.querySelector('#result div span');
 const resultDiv = document.querySelector('#result');
 const correctTick = document.querySelectorAll('.check');
-
+const allInputs = document.querySelectorAll('input');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -33,7 +33,11 @@ form.addEventListener('submit', e => {
     })
         
 
-    resultDiv.classList.remove('d-none')
+    resultDiv.classList.remove('d-none');
+    allInputs.forEach(input => {
+        input.disabled = true;
+        input.style.cursor = 'not-allowed';
+    });
     document.documentElement.scrollTop = 0;
     let i = 0;
     const timer = setInterval(() => {
