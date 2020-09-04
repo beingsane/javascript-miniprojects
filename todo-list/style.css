@@ -1,0 +1,32 @@
+*{
+    color: rgb(70, 75, 75);
+}
+
+body{
+    background-color: rgb(231, 231, 231)
+}
+
+.container{
+    max-width: 500px;
+    background-color: white;
+    box-shadow: 1px 1px 3px 3px gray;
+}
+
+.delete:hover, #deleteAll:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#todos .filter{
+    display: none !important;
+}
+
+@media(max-width: 500px){
+    body{
+        background-color: white;
+    }
+    
+    .container{
+        box-shadow: 0 0 0 0;
+    }
+}
