@@ -1,0 +1,40 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #201335;
+    height: 100%;
+}
+
+#clock{
+    height: 100%;
+    max-width: 300px;
+    margin: 100px auto 0;
+}
+
+#date{
+    text-align: center;
+    color: #fffded;
+    font-size: 2rem;
+}
+
+#time{
+    padding: 20px 15px;
+    background-color: #4f4789;
+    border: 2px solid #fce762;
+    font-size: 8vw;
+    display: flex;
+    justify-content: space-around;
+    color: #fce762;
+}
+
+@media(min-width: 576px){
+    #clock{
+        max-width: 500px;
+    }
+    #time{
+        font-size: 5vw;
+    }
+}
+
